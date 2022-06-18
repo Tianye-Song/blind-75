@@ -17,3 +17,8 @@ class Solution:
                 return True
             nums_set.add(x)
         return False
+
+# Thoughts:
+# Compared to get the solution after all the computation, sometimes the result is already obvious in the middle
+# (e.g. there is a duplicate value in the middle of the list)
+# Therefore, the problem could also be solved by for loop and get the conclusion when there exists an example against the rule.
