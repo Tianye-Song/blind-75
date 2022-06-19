@@ -15,6 +15,7 @@ class Solution:
             postfix *= nums[i]
         
         return result
+        
  # Thoughts
  # Dynamic programming
  # The prefix and postfix used each time could be computed by the prefix and postfix in the previous step
