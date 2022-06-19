@@ -14,4 +14,6 @@ class Solution:
                 longest = max(longest, length)
         return longest
         
- # Go through the entire list and add justification by detecting whether the number is the start of the sequence of not
+ # Go through the entire list 
+ # Add justification for each number by detecting whether the number is the start of the sequence of not 
+ # (whether the number smaller than it exists)
