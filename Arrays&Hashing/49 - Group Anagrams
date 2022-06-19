@@ -1,6 +1,7 @@
 # Pyhton3
 
 # First version
+
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         group_dict = defaultdict(list)
