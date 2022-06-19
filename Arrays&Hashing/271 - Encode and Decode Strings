@@ -1,5 +1,7 @@
-# Python3
+# Python3 
+
 # First version
+
 class Solution:
     """
     @param: strs: a list of strings
@@ -26,6 +28,7 @@ class Solution:
             res.append(str[j + 1 : j + 1 + length])
             i = j + 1 + length
         return res
+        
  # Thoughts
  # Use length as connector to record the length of the string
  # Use "#" after length in case there are numbers in the string
