@@ -1,0 +1,20 @@
+# Python3
+# First version
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        count_dict = {}
+        count_list = [[] for i in range(len(nums)+1)]
+        for n in nums:
+            count_dict[n] = count_dict.get(n,0)+1
+        for n, c in count_dict.items():
+            count_list[c].append(n)
+        result = []
+        for i in range(len(count_list)-1,0,-1):
+            for n in count_list[i]:
+                result.append(n)
+                if len(result)==k:
+                    return result
+
+# Thoughts
+# Use counts as list index to save space
