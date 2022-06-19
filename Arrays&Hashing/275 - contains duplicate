@@ -1,5 +1,7 @@
 # Python 3
+
 # First version
+
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         nums_set = set(nums)
@@ -9,6 +11,7 @@ class Solution:
             return False
 
 # Second version
+
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         nums_set = set()
