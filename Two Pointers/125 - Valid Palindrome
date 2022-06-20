@@ -30,3 +30,6 @@ class Solution:
         return (ord('A') <= ord (c) <= ord ('Z') or 
                 ord('a') <= ord (c) <= ord ('z') or
                 ord('0') <= ord (c) <= ord ('9'))
+
+# Thoughts
+# Here by using pointers, no extra memory is needed; therefore, the space complexity is O(1).
