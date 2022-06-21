@@ -1,0 +1,22 @@
+# Python 3
+
+# Two pointer
+# Difference between two pointer and slicing window
+# In Two pointer, the two pointers move towards each other
+# In slicing window, the two pointers move in the same direction create different windows
+
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        left = 0
+        max_len = 0
+        charSet = set()
+        
+        for right in range(len(s)):
+            while s[right] in charSet:
+                charSet.remove(s[left])
+                left += 1
+            charSet.add(s[right])
+            max_len = max(max_len, len(charSet))
+            right += 1 
+        return max_len
+        
