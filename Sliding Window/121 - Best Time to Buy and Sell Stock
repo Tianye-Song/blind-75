@@ -1,0 +1,20 @@
+# Python3
+
+# Two pointers
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        left, right = 0, 1
+        profit = 0
+        while left<right and right< len(prices):
+            gap = prices[right] - prices[left]          
+            if gap >= 0:
+                profit = max(profit,gap)
+            else :
+                left = right
+            right += 1
+        return profit
+            
+                
+            
+        
