@@ -2,6 +2,7 @@
 
 # iterative method
 # Time complexity O(log(n))
+# Memory complexity O(1)
 
 # Definition for a binary tree node.
 # class TreeNode:
